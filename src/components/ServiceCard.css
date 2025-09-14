@@ -1,0 +1,35 @@
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    display: flex; /* Use flexbox for consistent internal layout */
+    flex-direction: column; /* Stack image and content vertically */
+    justify-content: space-between; /* Pushes content to bottom if needed */
+    border-radius: 0.5rem; /* 8px, matches rounded-lg */
+    text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Matches shadow-sm */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden; /* Ensures the image corners are clipped by the border-radius */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* A more prominent shadow on hover */
+  }
+  
+  .service-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Enforce a consistent aspect ratio for all images */
+    object-fit: cover; /* Ensures image covers the area, similar to default img behavior */
+  }
+
+  .service-card-content {
+    padding: 1.25rem; /* 20px, matches p-5 */
+  }
+  
+  .service-card p {
+    margin: 0;
+    font-size: 1.125rem; /* ~18px, a bit larger for emphasis */
+    color: #4a5568;
+    font-weight: 600; /* Bolder text */
+  }

@@ -1,0 +1,27 @@
+/* Apply a base font and background to the body for context */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7fafc;
+}
+
+.cleaning-services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default to 2 columns for mobile (2x3 grid) */
+  gap: 1.5rem; /* ~24px */
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* On screens 768px and wider, switch to 3 columns */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop (3x2 grid) */
+  }
+}
