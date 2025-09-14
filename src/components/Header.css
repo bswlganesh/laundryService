@@ -1,9 +1,8 @@
 /* General Header Styling */
 header {
-  
-  background: #ffffff;
-  
- 
+  background: #FEFCF3; /* Match hero background */
+  position: sticky;
+  width: 100%;
   top: 0;
   z-index: 1000;
   font-family: 'Poppins', sans-serif;
@@ -35,13 +34,13 @@ header {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
-  color: #222;
+  color: #3A5C3A; /* Use strong green from hero */
 }
 
 .header-left p {
   margin: 0;
   font-size: 12px;
-  color: #777;
+  color: #2C3E2A; /* Use dark green from hero */
 }
 
 /* Center the navigation */
@@ -64,12 +63,25 @@ header {
 .header-right nav ul li a {
   text-decoration: none;
   font-size: 15px;
-  color: #333;
+  color: #2C3E2A; /* Use dark green from hero */
+  position: relative;
+  padding-bottom: 5px;
   transition: color 0.3s ease;
 }
 
+.header-right nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3A5C3A; /* Use strong green for hover underline */
+  transition: width 0.3s ease;
+}
+
 .header-right nav ul li a:hover {
-  color: #0077ff;
+  color: #3A5C3A; /* Use strong green for hover text */
 }
 
 /* Pickup Button */
@@ -78,7 +90,7 @@ header {
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: #0077ff;
+  background: #3A5C3A; /* Use strong green for button */
   border: none;
   border-radius: 25px;
   color: #fff;
@@ -89,7 +101,7 @@ header {
 }
 
 .pickup-button:hover {
-  background: #005fd1;
+  background: #2C3E2A; /* Use darker green for button hover */
 }
 
 /* Hamburger Menu */
@@ -106,7 +118,7 @@ header {
 .bar {
   height: 3px;
   width: 100%;
-  background-color: #333;
+  background-color: #3A5C3A; /* Use strong green for hamburger bars */
   border-radius: 5px;
   transition: all 0.3s ease;
 }
@@ -130,7 +142,7 @@ header {
   top: 70px;
   left: 0;
   right: 0;
-  background: #ffffff;
+  background: #FEFCF3; /* Match hero background */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -141,18 +153,18 @@ header {
 
 .mobile-nav a {
   text-decoration: none;
-  color: #333;
+  color: #2C3E2A; /* Use dark green for links */
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
 .mobile-nav a:hover {
-  color: #0077ff;
+  color: #3A5C3A; /* Use strong green for hover */
 }
 
 .mobile-pickup-button {
   margin-top: 10px;
-  background: #0077ff;
+  background: #3A5C3A; /* Use strong green for button */
   color: #fff !important;
   padding: 10px;
   text-align: center;
