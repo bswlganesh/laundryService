@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './CleaningServices.css';
 import ServiceCard, { services } from '../components/ServiceCard';
 
 const CleaningServices = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="cleaning-services-container">
       <div className="services-grid">
         {services.map((service) => (
-          <ServiceCard key={service.id} image={service.image} name={service.name} />
+          <ServiceCard key={service.id} image={service.image} name={service.name} scrollOffset={offsetY} />
         ))}
       </div>
     </div>

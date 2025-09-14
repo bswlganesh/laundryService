@@ -17,9 +17,17 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* A more prominent shadow on hover */
   }
   
+  .service-card-image-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden; /* This is crucial to clip the moving image */
+  }
+
   .service-card img {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Enforce a consistent aspect ratio for all images */
+    height: 110%; /* Make image slightly taller to have room to move */
+    transform-origin: center center;
+    transition: transform 0.1s linear; /* Smooths out the movement slightly */
     object-fit: cover; /* Ensures image covers the area, similar to default img behavior */
   }
 
