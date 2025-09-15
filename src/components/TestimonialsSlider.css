@@ -1,0 +1,116 @@
+/* Import a font for a clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.testimonials-section-fix{
+  height: 100rem;
+}
+.testimonials-section {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  min-height: 70vh;
+}
+
+.testimonials-pre-title {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.testimonials-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* Desktop: 3 cards per view */
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+.testimonial-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 10px 0;
+}
+
+.testimonial-card .testimonial-text {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  flex-grow: 1; /* Pushes author to the bottom */
+}
+
+.testimonial-card .testimonial-author {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3a5c3a;
+  margin: 0;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #007bff;
+  transform: scale(1.2);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .testimonials-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card {
+    /* Mobile: 1 card per view */
+    flex-basis: 100%;
+    margin: 0;
+    padding: 25px;
+  }
+}

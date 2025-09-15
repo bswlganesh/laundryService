@@ -1,0 +1,94 @@
+/* Import a font for a clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.pricing-section-fix{
+    height: 100vh;
+}
+.pricing-section {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 60px 20px;
+
+  min-height: 70vh;
+}
+
+.pricing-pre-title {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.pricing-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab-button {
+  padding: 12px 25px;
+  border: 1px solid #eee;
+  background-color: #f9f9f9;
+  color: #4a5568;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #f0f2f5;
+}
+
+.tab-button.active {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(to right, #007bff, #28a745);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.price-list-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f9fc;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.price-item .price {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .price-list-content {
+    grid-template-columns: 1fr;
+  }
+}

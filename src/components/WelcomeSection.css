@@ -1,0 +1,77 @@
+/* Import a font for a clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.welcome-image-container {
+  flex: 1;
+  max-width: 450px;
+}
+
+.welcome-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text-container {
+  flex: 1.2;
+}
+
+.welcome-text-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.welcome-text-container .subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 24px;
+}
+
+.welcome-text-container p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 20px auto;
+    gap: 30px;
+  }
+
+  .welcome-text-container {
+    text-align: center;
+  }
+
+  .welcome-text-container h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-text-container .subtitle {
+    font-size: 1rem;
+  }
+
+  .welcome-text-container p {
+    font-size: 0.95rem;
+  }
+}

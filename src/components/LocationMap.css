@@ -1,0 +1,33 @@
+/* Import a font for a clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.location-section {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+}
+
+.location-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 40px;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden; /* This clips the iframe to the container's border-radius */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  /* The iframe will take up 100% of the container's width */
+  width: 100%;
+  height: 450px;
+  /* Remove the default border from the iframe */
+  border: 0;
+  display: block; /* Removes any extra space below the iframe */
+}
