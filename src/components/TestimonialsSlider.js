@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './TestimonialsSlider.css';
 
 // Data source for the testimonials (as provided, unchanged)
@@ -14,42 +14,15 @@ const testimonials = [
   { id: 9, title: 'Exceptional Customer Service', text: 'Had a special request for my laundry and the team was so accommodating. It’s rare to find such great customer service these days. 5 stars!', author: 'Amit Patel' },
 ];
 
+// To create a seamless loop, we duplicate the testimonials.
+const extendedTestimonials = [...testimonials, ...testimonials];
+
 const TestimonialsSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // Effect for auto-sliding
-  useEffect(() => {
-    const testimonialsPerSlide = isMobile ? 1 : 3;
-    const totalSlides = Math.ceil(testimonials.length / testimonialsPerSlide);
-
-    const sliderInterval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-    }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(sliderInterval);
-  }, [isMobile]);
-
-  const testimonialsPerSlide = isMobile ? 1 : 3;
-  const totalSlides = Math.ceil(testimonials.length / testimonialsPerSlide);
-
-  const handleDotClick = (index) => {
-    setCurrentSlide(index);
-  };
+  // Calculate animation duration based on the number of testimonials
+  // to maintain a somewhat consistent speed.
+  const animationDuration = testimonials.length * 5; // 5 seconds per card
 
   return (
-    
-
-    
     <section className="testimonials-section">
       <p className="testimonials-pre-title">[ Our Testimonials ]</p>
       <h2>What Our Clients Say About Dhulai Factory</h2>
@@ -57,9 +30,11 @@ const TestimonialsSlider = () => {
       <div className="slider-container">
         <div
           className="slider-track"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          style={{ 
+            animation: `scroll ${animationDuration}s linear infinite`
+          }}
         >
-          {testimonials.map((testimonial) => (
+          {extendedTestimonials.map((testimonial, index) => (
             <div key={testimonial.id} className="testimonial-card">
               <h4>{testimonial.title}</h4>
               <p className="testimonial-text">"{testimonial.text}"</p>
@@ -68,19 +43,7 @@ const TestimonialsSlider = () => {
           ))}
         </div>
       </div>
-
-      <div className="slider-dots">
-        {Array.from({ length: totalSlides }).map((_, index) => (
-          <button
-            key={index}
-            className={`dot ${currentSlide === index ? 'active' : ''}`}
-            onClick={() => handleDotClick(index)}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
     </section>
-   
   );
 };
 

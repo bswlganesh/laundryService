@@ -1,0 +1,91 @@
+.footer-container {
+  background-color: #004a7c;
+  color: white;
+  padding: 50px 20px 0; /* Remove bottom padding to accommodate the new section */
+  width: 100%; /* Use 100% instead of 100vw to avoid horizontal scrollbars */
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px; /* Adds space between columns */
+  padding-bottom: 40px; /* Add padding to the bottom of the content */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 280px; /* Prevents columns from getting too squished */
+  text-align: left; /* Align text to the left on desktop */
+      
+}
+
+.thirdfooter{
+   
+}
+
+.footer-column h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  
+}
+
+.footer-column h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid #00c6ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-column p {
+  line-height: 1.7;
+  opacity: 0.9;
+  /* text-align: justify; */ /* Let's use left align for consistency */
+  
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-icon {
+  margin-right: 15px;
+  font-size: 1.1rem;
+  color: #00c6ff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+    align-items: center; /* Center content on mobile */
+    display: flex;
+    flex-direction: column;
+  }
+}

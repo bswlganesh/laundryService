@@ -1,0 +1,134 @@
+.services-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.services-subtitle {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.services-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 12px; /* Match card radius */
+  border-top-right-radius: 12px; /* Match card radius */
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9; /* Enforce a consistent aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container */
+  display: block;
+  transition: transform 0.4s ease-in-out;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.card-image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.card-image-container:hover img:first-of-type {
+  transform: scale(1.1);
+}
+
+.service-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows this container to grow and fill available space */
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin: 0 0 10px;
+  color: #2d3748;
+}
+
+.service-card p {
+  flex-grow: 1; /* Pushes the button to the bottom */
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 20px; 
+}
+
+.more-info-btn {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.more-info-btn:hover {
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* --- Responsiveness --- */
+
+/* For tablets */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile */
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

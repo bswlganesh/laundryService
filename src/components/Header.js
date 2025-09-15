@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 import logo from '../assets/dhulaifactorylogo.png';
 
 const Header = () => {
@@ -24,11 +25,11 @@ const Header = () => {
         <div className="header-right">
           <nav>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#prices">Prices</a></li>
-              <li><a href="#contacts">Contacts</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><a href="/#prices">Prices</a></li>
+              <li><a href="/#contacts">Contacts</a></li>
             </ul>
           </nav>
 
@@ -50,12 +51,12 @@ const Header = () => {
         {/* Mobile Nav */}
         {isMenuOpen && (
           <nav className="mobile-nav">
-            <a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-            <a href="#services" onClick={() => setIsMenuOpen(false)}>Services</a>
-            <a href="#prices" onClick={() => setIsMenuOpen(false)}>Prices</a>
-            <a href="#contacts" onClick={() => setIsMenuOpen(false)}>Contacts</a>
-            <a href="#pickup" className="mobile-pickup-button" onClick={() => setIsMenuOpen(false)}>Schedule a Pickup</a>
+            <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+            <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
+            <a href="/#prices" onClick={() => setIsMenuOpen(false)}>Prices</a>
+            <a href="/#contacts" onClick={() => setIsMenuOpen(false)}>Contacts</a>
+            <a href="/#pickup" className="mobile-pickup-button" onClick={() => setIsMenuOpen(false)}>Schedule a Pickup</a>
           </nav>
         )}
       </div>

@@ -37,7 +37,10 @@
 
 .slider-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  /* transition: transform 0.5s ease-in-out; */ /* We will use animation instead */
+  /* The animation will be set dynamically in the component */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .testimonial-card {
@@ -78,29 +81,20 @@
   margin: 0;
 }
 
-.slider-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+/* Add hover effect to pause animation */
+.slider-container:hover .slider-track {
+  animation-play-state: paused;
 }
 
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ccc;
-  border: none;
-  margin: 0 5px;
-  cursor: pointer;
-  padding: 0;
-  transition: all 0.3s ease;
+/* Keyframes for the infinite scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
-.dot.active {
-  background-color: #007bff;
-  transform: scale(1.2);
-}
-
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .testimonials-section h2 {
