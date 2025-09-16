@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import useLenis from './hooks/useLenis';
 import Header from './components/Header';
 import Hero from './pages/Hero';
 import CleaningServices from './pages/CleaningServices';
@@ -9,7 +10,8 @@ import PricingList from './components/PricingList';
 import LocationMap from './components/LocationMap';
 import ServicesSection from './components/ServicesSection';
 import Footer from './components/Footer';
-import AboutUs from './components/AboutUs';
+import AboutUs from './components/AboutUs'; 
+import ServicePage from './components/ServicePage'
 
 // A new component to represent the Home Page content
 const HomePage = () => (
@@ -25,6 +27,8 @@ const HomePage = () => (
 );
 
 export default function App() {
+  useLenis();
+
   return (
     <>
       <Header />
@@ -32,6 +36,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<ServicePage />} />
         </Routes>
       </main>
       <Footer />

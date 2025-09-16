@@ -1,5 +1,5 @@
 /* --- Hero Banner Section --- */
-.about-hero {
+.page-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/laundry.jpg');
   background-size: cover;
   background-position: center;
@@ -13,14 +13,14 @@
   padding: 20px;
 }
 
-.about-hero-content .breadcrumb {
-  font-size: 0.9rem;
+.page-banner .breadcrumb {
+  font-size: 1rem;
   margin-bottom: 10px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-.about-hero-content h1 {
-  font-size: 3rem;
+.page-banner h1 {
+  font-size: 3.5rem;
   font-weight: 700;
   margin: 0;
 }
@@ -83,6 +83,7 @@
   padding: 60px 20px;
   background-color: #f7faff; /* A light background to separate sections */
   text-align: center;
+
 }
 
 .trusted-partner-title {
@@ -102,6 +103,7 @@
 .feature-block {
   background-color: #fff;
   padding: 30px;
+  
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 74, 124, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -130,7 +132,7 @@
 }
 
 @media (max-width: 768px) {
-  .about-hero-content h1 {
+  .page-banner h1 {
     font-size: 2.5rem;
   }
 

@@ -9,14 +9,12 @@ const AboutUs = () => {
   return (
     <div className="about-us-page">
       {/* Section 1: Hero Banner */}
-      <section className="about-hero">
-        <div className="about-hero-content">
-          <nav className="breadcrumb">
-            <span>home &gt; About Us</span>
-          </nav>
+      <div className="page-banner">
+        <div className="banner-content">
+          <nav className="breadcrumb">home / About Us</nav>
           <h1>About Us</h1>
         </div>
-      </section>
+      </div>
 
       {/* Section 2: Introduction & Founders */}
       <section className="about-intro-section">

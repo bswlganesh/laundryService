@@ -18,22 +18,24 @@ export const services = [
   { id: 6, name: 'Car Cleaning', image: carCleaningImage },
 ];
 
-const ServiceCard = ({ image, name, scrollOffset }) => {
+const ServiceCard = ({ image, name }) => {
   const cardRef = useRef(null);
   const [elementTop, setElementTop] = useState(0);
+  const [scrollOffset, setScrollOffset] = useState(0);
 
   useEffect(() => {
     if (cardRef.current) {
-      // Find the card's position relative to the top of the document
       setElementTop(cardRef.current.getBoundingClientRect().top + window.scrollY);
     }
+
+    const handleScroll = () => setScrollOffset(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Calculate a relative scroll value to make the effect start near the element
   const relativeScroll = scrollOffset - elementTop;
 
   const parallaxStyle = {
-    // The 0.05 factor controls the speed of the parallax effect. Keep it small for a subtle motion.
     transform: `translateY(${relativeScroll * 0.05}px)`,
   };
 
