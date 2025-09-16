@@ -1,0 +1,20 @@
+import React from 'react'
+import './ContactPage.css'
+export default function ContactPage() {
+   return (
+    <div className='pricing-page-container'>
+        {/* Top Banner Section */}
+      <div className="page-banner services-banner">
+        <div className="banner-content">
+          <nav className="breadcrumb">home / Prices</nav>
+          <h1>Prices</h1>
+          
+        </div>
+      </div>
+      </div>
+
+     
+    
+  )
+}
+    

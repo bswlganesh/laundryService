@@ -28,8 +28,8 @@ const Header = () => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/services">Services</Link></li>
-              <li><a href="/#prices">Prices</a></li>
-              <li><a href="/#contacts">Contacts</a></li>
+              <li><Link to="/prices">Prices</Link></li>
+              <li><Link to="/contacts">Contacts</Link></li>
             </ul>
           </nav>
 

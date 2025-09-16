@@ -1,0 +1,10 @@
+.pricing-page-container {
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff;   
+}
+
+.ServicePagePricingList{
+height:60rem;
+}
