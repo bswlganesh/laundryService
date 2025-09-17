@@ -5,7 +5,7 @@ export default function PricesPage() {
   return (
     <div className='pricing-page-container'>
         {/* Top Banner Section */}
-      <div className="page-banner services-banner">
+      <div className="pricing-page-banner services-banner">
         <div className="banner-content">
           <nav className="breadcrumb">home / Prices</nav>
           <h1>Prices</h1>

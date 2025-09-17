@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import Services from './Services';
+import ContactPage from './ContactPage';
 
 const AllRoutes = () => {
   return (

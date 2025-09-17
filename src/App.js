@@ -13,7 +13,8 @@ import Footer from './components/Footer';
 import AboutUs from './components/AboutUs'; 
 import ServicePage from './components/ServicePage'
 import PricesPage from './pages/PricesPage';
-import ContactPage from './pages/ContactPage';
+import ContactPage from './components/ContactPage';
+
 // A new component to represent the Home Page content
 const HomePage = () => (
   <>

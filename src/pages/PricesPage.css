@@ -5,6 +5,33 @@
   background-color: #fff;   
 }
 
+/* --- Hero Banner Section --- */
+.pricing-page-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/laundry.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.pricing-page-banner .breadcrumb {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.pricing-page-banner h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
 .ServicePagePricingList{
 height:60rem;
 }
