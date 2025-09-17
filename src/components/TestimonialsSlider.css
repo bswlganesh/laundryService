@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 .testimonials-section-fix{
-  height: 100rem;
+  height: 80rem;
 }
 .testimonials-section {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   padding: 60px 20px;
   background-color: #f9fafb;
-  min-height: 70vh;
+  min-height: 55vh;
 }
 
 .testimonials-pre-title {

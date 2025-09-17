@@ -1,163 +1,173 @@
-/* --- Hero Banner Section --- */
 .page-banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/laundry.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/laundry.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .page-banner .breadcrumb {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  opacity: 0.9;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
 .page-banner h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
 }
 
-/* --- Introduction & Founders Section --- */
-.about-intro-section {
-  padding: 60px 20px;
-  background-color: #fff;
+/* --- Contact Content Section --- */
+.contact-content-section {
+    padding: 60px 20px;
+    background-color: #f9fafb;
 }
 
-.about-intro-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  gap: 40px;
-  align-items: center;
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: flex-start;
 }
 
-.founders-column {
-  flex: 1;
-  display: flex;
-  gap: 20px;
+/* --- Contact Info Column --- */
+.contact-info-column {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 74, 124, 0.08);
+}
+.contactMapAnchor{
+  text-decoration: none;
+  color: black;
+}
+.contact-info-column h2 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin-bottom: 20px;
 }
 
-.founder-card {
-  text-align: center;
+.contact-info-column p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 25px;
 }
 
-.founder-card img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
 
-.founder-card p {
-  font-weight: 600;
-  color: #333;
+.contact-detail-icon {
+    font-size: 1.5rem;
+    color: #004a7c;
+    margin-right: 15px;
+    min-width: 25px;
 }
 
-.intro-text-column {
-  flex: 1.2;
+/* --- Map in Contact Info --- */
+.contact-map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 30px;
 }
 
-.intro-text-column h2 {
-  font-size: 2.2rem;
-  color: #2d3748;
-  margin-bottom: 20px;
+.contact-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.intro-text-column p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #4a5568;
-  margin-bottom: 15px;
+/* --- Contact Form Column --- */
+.contact-form-column {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 74, 124, 0.08);
 }
 
-/* --- Trusted Cleaning Partner Section --- */
-.trusted-partner-section {
-  padding: 60px 20px;
-  background-color: #f7faff; /* A light background to separate sections */
-  text-align: center;
-
+.contact-form-column h2 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin-bottom: 20px;
 }
 
-.trusted-partner-title {
-  font-size: 2.2rem;
-  color: #2d3748;
-  margin-bottom: 40px;
+.form-group {
+    margin-bottom: 20px;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns on desktop */
-  gap: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
 }
 
-.feature-block {
-  background-color: #fff;
-  padding: 30px;
-  
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 74, 124, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
 }
 
-.feature-block:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 74, 124, 0.12);
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #004a7c;
 }
 
-.feature-block h3 {
-  font-size: 1.4rem;
-  color: #004a7c;
-  margin-bottom: 10px;
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #004a7c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.feature-block p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #4a5568;
+.submit-btn:hover {
+    background-color: #003355;
 }
 
-
+.status-message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #2d3748;
+}
 /* --- Responsiveness --- */
 @media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
-  .page-banner h1 {
-    font-size: 2.5rem;
-  }
-
-  .about-intro-container {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .founders-column {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for founders on mobile */
-    display: grid;
-  }
-
-  .intro-text-column {
-    text-align: center;
-  }
-
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for features on mobile */
-  }
-}
-
-@media (max-width: 576px) {
-  .founders-column {
-    flex-direction: column;
-  }
-
+    .page-banner h1 {
+        font-size: 2.5rem;
+    }
 }

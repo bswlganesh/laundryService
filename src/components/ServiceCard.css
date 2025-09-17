@@ -1,11 +1,12 @@
 .service-card {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
-    display: flex; /* Use flexbox for consistent internal layout */
-    flex-direction: column; /* Stack image and content vertically */
-    justify-content: space-between; /* Pushes content to bottom if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start */
     border-radius: 0.5rem; /* 8px, matches rounded-lg */
     text-align: center;
+    height: 100%; /* Make card fill the grid cell height */
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Matches shadow-sm */
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -19,20 +20,23 @@
   
   .service-card-image-container {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden; /* This is crucial to clip the moving image */
+    height: 7rem; /* Set image container to 70% of card height */
+    overflow: hidden;
   }
 
   .service-card img {
     width: 100%;
-    height: 110%; /* Make image slightly taller to have room to move */
-    transform-origin: center center;
-    transition: transform 0.1s linear; /* Smooths out the movement slightly */
+    max-height: 103%;
+    height: 100%;
     object-fit: cover; /* Ensures image covers the area, similar to default img behavior */
   }
 
   .service-card-content {
+    height: 30%; /* Set content to 30% of card height */
     padding: 1.25rem; /* 20px, matches p-5 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .service-card p {

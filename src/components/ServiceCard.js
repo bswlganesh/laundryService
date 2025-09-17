@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import './ServiceCard.css';
 
 // Import images from the assets folder
@@ -19,30 +19,10 @@ export const services = [
 ];
 
 const ServiceCard = ({ image, name }) => {
-  const cardRef = useRef(null);
-  const [elementTop, setElementTop] = useState(0);
-  const [scrollOffset, setScrollOffset] = useState(0);
-
-  useEffect(() => {
-    if (cardRef.current) {
-      setElementTop(cardRef.current.getBoundingClientRect().top + window.scrollY);
-    }
-
-    const handleScroll = () => setScrollOffset(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const relativeScroll = scrollOffset - elementTop;
-
-  const parallaxStyle = {
-    transform: `translateY(${relativeScroll * 0.05}px)`,
-  };
-
   return (
-    <div className="service-card" ref={cardRef}>
+    <div className="service-card">
       <div className="service-card-image-container">
-        <img src={image} alt={name} style={parallaxStyle} />
+        <img src={image} alt={name} />
       </div>
       <div className="service-card-content">
         <p>{name}</p>

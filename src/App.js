@@ -8,7 +8,7 @@ import WelcomeSection from './components/WelcomeSection';
 import TestimonialsSlider from './components/TestimonialsSlider';
 import PricingList from './components/PricingList';
 import LocationMap from './components/LocationMap';
-import ServicesSection from './components/ServicesSection';
+
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs'; 
 import ServicePage from './components/ServicePage'
@@ -21,7 +21,7 @@ const HomePage = () => (
     <Hero />
     <CleaningServices />
     <WelcomeSection />
-    <ServicesSection />
+
     <TestimonialsSlider />
     <PricingList />
     <LocationMap />

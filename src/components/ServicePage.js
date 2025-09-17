@@ -1,7 +1,11 @@
 import React from 'react';
 import './ServicePage.css';
 import PricingList from './PricingList';
-
+import serviceslaundry from "../assets/services-laundry.jpg"
+import Carpetleaning from "../assets/carpet-cleaning.jpg";
+import SofaCleaning from "../assets/carpet-cleaning.jpg";
+import DryCleaning from "../assets/dry-cleaning.jpg";
+import CarCleaning from "../assets/car-cleaning.jpg"
 const ServicePage = () => {
   return (
     <div className="service-page-container">
@@ -20,7 +24,7 @@ const ServicePage = () => {
         {/* Laundry Services Section */}
         <section className="laundry-services-section">
           <div className="laundry-image-column">
-            <img src="/images/dhulai-factory.png" alt="Laundry Machines" />
+            <img src={serviceslaundry} alt="Laundry Machines" />
           </div>
           <div className="laundry-text-column">
             <h3>Laundry Services</h3>
@@ -48,19 +52,21 @@ const ServicePage = () => {
         </section>
 
         {/* Process Flowchart Section */}
-        <section className="process-flowchart">
-          <div className="flowchart-step">Tagging of each lot</div>
-          <div className="flowchart-step">Sorting of clothes according to colour</div>
-          <div className="flowchart-step">Spotting of cuff & collar area</div>
-          <div className="flowchart-step">Washing of clothes & Adding conditioner</div>
-          <div className="flowchart-step">Clothes are hot air-dried and disinfected</div>
-          <div className="flowchart-step">Packing and delivery</div>
-        </section>
+        <div className="flowchart-container">
+          <section className="process-flowchart">
+            <div className="flowchart-step">Tagging of each lot</div>
+            <div className="flowchart-step">Sorting of clothes according to colour</div>
+            <div className="flowchart-step">Spotting of cuff & collar area</div>
+            <div className="flowchart-step">Washing of clothes & Adding conditioner</div>
+            <div className="flowchart-step">Clothes are hot air-dried and disinfected</div>
+            <div className="flowchart-step">Packing and delivery</div>
+          </section>
+        </div>
 
         {/* Additional Services Grid Section */}
         <section className="additional-services-grid">
           <div className="service-card">
-            <img src="/images/dry-cleaning.jpg" alt="Dry Cleaning" />
+            <img src={DryCleaning} alt="Dry Cleaning" />
             <div className="service-card-content">
               <h4>Dry Cleaning</h4>
               <p>
@@ -69,7 +75,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="service-card">
-            <img src="/images/carpet-cleaning.jpg" alt="Carpet Cleaning" />
+            <img src={Carpetleaning} alt="Carpet Cleaning" />
             <div className="service-card-content">
               <h4>Carpet Cleaning</h4>
               <p>
@@ -78,7 +84,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="service-card">
-            <img src="/images/sofa-cleaning.jpg" alt="Sofa Cleaning" />
+            <img src={SofaCleaning} alt="Sofa Cleaning" />
             <div className="service-card-content">
               <h4>Sofa Cleaning</h4>
               <p>
@@ -87,7 +93,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="service-card">
-            <img src="/images/car-washing.jpg" alt="Car Washing" />
+            <img src={CarCleaning} alt="Car Washing" />
             <div className="service-card-content">
               <h4>Car Washing</h4>
               <p>
