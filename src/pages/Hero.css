@@ -1,6 +1,6 @@
 /* General Hero Container Styles */
 .hero-container {
-    background-color: #FEFCF3;
+
     display: flex;
     flex-direction: column;
     align-items: center;

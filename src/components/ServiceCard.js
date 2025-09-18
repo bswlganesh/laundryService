@@ -20,11 +20,11 @@ export const services = [
 
 const ServiceCard = ({ image, name }) => {
   return (
-    <div className="service-card">
-      <div className="service-card-image-container">
+    <div className="servicecard-card">
+      <div className="servicecard-card-image-container">
         <img src={image} alt={name} />
       </div>
-      <div className="service-card-content">
+      <div className="servicecard-card-content">
         <p>{name}</p>
       </div>
     </div>

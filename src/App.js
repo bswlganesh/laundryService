@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import useLenis from './hooks/useLenis';
+import useScroll from './hooks/useScroll'; // Import useScroll instead of useLenis
 import Header from './components/Header';
 import Hero from './pages/Hero';
 import CleaningServices from './pages/CleaningServices';
@@ -29,7 +29,7 @@ const HomePage = () => (
 );
 
 export default function App() {
-  useLenis();
+  useScroll(); // Use the GSAP-integrated scroll hook
 
   return (
     <>

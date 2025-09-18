@@ -142,8 +142,8 @@
   }
 
   .founders-column {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for founders on mobile */
-    display: grid;
+    /* This was a grid, but also had flex properties in other media queries. Sticking to flex. */
+    flex-direction: row;
   }
 
   .intro-text-column {
@@ -151,13 +151,12 @@
   }
 
   .features-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for features on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* More responsive grid */
   }
 }
 
 @media (max-width: 576px) {
   .founders-column {
-    flex-direction: column;
+    flex-direction: column; /* This is correct for a flex container */
   }
-
 }

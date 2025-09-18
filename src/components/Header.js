@@ -34,9 +34,22 @@ const Header = () => {
           </nav>
 
           <button className="pickup-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
-              <path d="M2 12l18-9-7 9 7 9z"/>
-            </svg>
+            <div className="svg-wrapper-1">
+              <div className="svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="currentColor"
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
             <span>Schedule a Pickup</span>
           </button>
 
@@ -54,9 +67,9 @@ const Header = () => {
             <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
-            <a href="/#prices" onClick={() => setIsMenuOpen(false)}>Prices</a>
-            <a href="/#contacts" onClick={() => setIsMenuOpen(false)}>Contacts</a>
-            <a href="/#pickup" className="mobile-pickup-button" onClick={() => setIsMenuOpen(false)}>Schedule a Pickup</a>
+            <Link to="/prices" onClick={() => setIsMenuOpen(false)}>Prices</Link>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contacts</Link>
+            <Link to="/contact" className="mobile-pickup-button" onClick={() => setIsMenuOpen(false)}>Schedule a Pickup</Link>
           </nav>
         )}
       </div>

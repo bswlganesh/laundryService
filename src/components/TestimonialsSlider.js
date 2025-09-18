@@ -20,7 +20,7 @@ const extendedTestimonials = [...testimonials, ...testimonials];
 const TestimonialsSlider = () => {
   // Calculate animation duration based on the number of testimonials
   // to maintain a somewhat consistent speed.
-  const animationDuration = testimonials.length * 5; // 5 seconds per card
+  const animationDuration = testimonials.length * 3; // 5 seconds per card
 
   return (
     <section className="testimonials-section">

@@ -1,19 +1,19 @@
 .footer-container {
-  background-color: #004a7c;
+  background-color: #00367c;
   color: white;
-  padding: 50px 20px 0; /* Remove bottom padding to accommodate the new section */
-  width: 100%; /* Use 100% instead of 100vw to avoid horizontal scrollbars */
+  /* padding: 50px 20px 0; Remove bottom padding to accommodate the new section */
+  width: auto; /* Use 100% instead of 100vw to avoid horizontal scrollbars */
   font-family: 'Poppins', sans-serif;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: stretch;
   max-width: 1000px;
   margin: 0 auto;
   gap: 30px; /* Adds space between columns */
-  padding-bottom: 40px; /* Add padding to the bottom of the content */
+ /* Add padding to the bottom of the content */
 }
 
 .footer-column {
@@ -23,15 +23,18 @@
       
 }
 
-.thirdfooter{
-   
-}
+
 
 .footer-column h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
   font-weight: 700;
-  
+ 
+  background: linear-gradient(90deg, #2d8ae7, #34c38f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .footer-column h3 {
@@ -47,8 +50,10 @@
   line-height: 1.7;
   opacity: 0.9;
   /* text-align: justify; */ /* Let's use left align for consistency */
-  
+  font-size: 0.80rem;
 }
+
+
 
 .contact-item {
   display: flex;
@@ -65,13 +70,13 @@
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
-  padding: 20px;
+  padding: 8px;
   margin-top: 20px;
 }
 
 .footer-bottom p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   opacity: 0.8;
 }
 /* --- Responsiveness --- */

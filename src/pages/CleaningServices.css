@@ -1,8 +1,5 @@
 /* Apply a base font and background to the body for context */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f7fafc;
-}
+
 
 .cleaning-services-container {
   display: flex;
@@ -22,6 +19,6 @@ body {
 /* On screens 768px and wider, switch to 3 columns */
 @media (min-width: 768px) {
   .services-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop (3x2 grid) */
+    grid-template-columns: repeat(6, 1fr); /* 3 columns for desktop (3x2 grid) */
   }
 }
