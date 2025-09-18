@@ -44,7 +44,7 @@ header {
 
 .header-left p {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   color: #2C3E2A; /* Use dark green from hero */
 }
 
@@ -67,7 +67,7 @@ header {
 
 .header-right nav ul li a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   color: #2C3E2A; /* Use dark green from hero */
   position: relative;
   padding-bottom: 5px;
@@ -182,7 +182,7 @@ header {
 /* Mobile Navigation */
 .mobile-nav {
   position: absolute;
-  top: 70px;
+  top: 95px;
   left: 0;
   right: 0;
   background: #FEFCF3; /* Match hero background */

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css'; // This path is correct relative to its new location
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
 import heroImage from '../assets/hero-image.jpg'; // Assuming you have this image
+import phoneIcon from '../assets/phone.svg';
+
+import mapMarkerIcon from '../assets/map-marker.svg';
+
 
 const Hero = () => {
   const services = [
@@ -32,7 +34,7 @@ const Hero = () => {
     <section className="hero-container">
       {/* Floating Phone Icon */}
       <a href="tel:+919213203071" className="floating-icon phone-icon">
-        <BsFillTelephoneFill />
+        <img src={phoneIcon} alt="Call us" />
       </a>
 
       {/* Left Section (Image) */}
@@ -75,28 +77,20 @@ const Hero = () => {
 
         {/* Contact Info */}
         <div className="contact-info">
-          <div className="contact-item">
-            <FaMapMarkerAlt className="contact-icon" />
+          <div className="HeroContactItem">
+            <img src={mapMarkerIcon} alt="Location" className="hero-contact-icon" />
             <span>Rohini, Delhi, 110085</span>
           </div>
-          <div className="contact-item">
+          <div className="HeroContactItem">
             <a href="tel:+919213203071" className="contact-phone-link">
-              <BsFillTelephoneFill className="contact-icon" />
+              <img src={phoneIcon} alt="Phone" className="hero-contact-icon" />
               <span>+91 92132 03071</span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* Floating WhatsApp Icon */}
-      <a
-        href="https://wa.me/919213203071"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="floating-icon whatsapp-icon"
-      >
-        <FaWhatsapp />
-      </a>
+   
     </section>
   );
 };

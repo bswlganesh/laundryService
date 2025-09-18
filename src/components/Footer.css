@@ -14,6 +14,7 @@
   margin: 0 auto;
   gap: 30px; /* Adds space between columns */
  /* Add padding to the bottom of the content */
+ height: 25vh;
 }
 
 .footer-column {
@@ -61,12 +62,23 @@
   margin-bottom: 15px;
 }
 
-.contact-icon {
+.contact-icon-wrapper {
+  width: 36px; /* Width of the square container */
+  height: 36px; /* Height of the square container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 15px;
-  font-size: 1.1rem;
-  color: #00c6ff;
+  flex-shrink: 0; /* Prevent wrapper from shrinking */
 }
 
+.contact-icon {
+  width: 100%;  /* Icon fills the wrapper */
+  height: 100%; /* Icon fills the wrapper */
+  /* The filter below is a tool to generate a specific color. 
+     This one converts the black SVG to the desired #00c6ff blue. */
+  filter: invert(69%) sepia(99%) saturate(4529%) hue-rotate(165deg) brightness(102%) contrast(105%);
+}
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -78,6 +90,9 @@
   margin: 0;
   font-size: 0.7rem;
   opacity: 0.8;
+}
+.FooterContactAddress{
+  font-size: 12px;
 }
 /* --- Responsiveness --- */
 @media (max-width: 768px) {
