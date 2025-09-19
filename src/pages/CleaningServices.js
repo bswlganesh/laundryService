@@ -5,7 +5,7 @@ import ServiceCard, { services } from '../components/ServiceCard';
 const CleaningServices = () => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
-
+console.log("Scroll position:", offsetY);
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
