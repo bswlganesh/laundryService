@@ -6,7 +6,7 @@ const WelcomeSection = () => {
   return (
     <div className="welcome-container">
       <div className="welcome-image-container">
-        <img src={welcomeImage} alt="Dhulai Factory Interior" />
+        <img src={welcomeImage} alt="Dhulai Factory Interior" loading="lazy" />
       </div>
       <div className="welcome-text-container">
         <h2>Welcome To Dhulai Factory</h2>

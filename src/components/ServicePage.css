@@ -203,7 +203,7 @@
   margin: 0;
 }
 .ServicePagePricingList{
-height:60rem;
+height:67rem;
 }
 /* --- Responsiveness --- */
 @media (max-width: 992px) {
@@ -218,6 +218,12 @@ height:60rem;
     left: 50%;
     transform: translateX(-50%);
   }
+  .process-flowchart {
+    width: 100%;
+}
+.service-card{
+    height: 23rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -231,19 +237,34 @@ height:60rem;
 
   .additional-services-grid {
     grid-template-columns: 1fr;
+    height:auto;
   }
+  .process-flowchart {
+    width: 100%;
+}
+.service-card{
+    height: 19rem;
+  }
+.ServicePagePricingList{
+  height: 174vh;
+}
 }
 
 @media (max-width: 576px) {
   .service-page-main-content {
     padding: 40px 15px;
   }
-
+.ServicePagePricingList{
+  height: 103rem;
+}
   .service-page-main-content h2 {
     font-size: 2rem;
   }
 
   .laundry-text-column h3 {
     font-size: 1.8rem;
+  }
+  .service-card{
+    height: 30rem;
   }
 }

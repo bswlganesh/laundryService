@@ -13,7 +13,7 @@ export default function PricesPage() {
         </div>
       </div>
 
-      <div className='ServicePagePricingList'>
+      <div className='PricesPagePricingList'>
 <PricingList/>
       </div>
     </div>

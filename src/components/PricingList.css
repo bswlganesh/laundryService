@@ -1,7 +1,7 @@
 /* Import a font for a clean look */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 .pricing-section-fix{
-    height: 100vh;
+    height: 109vh;
 }
 .pricing-section {
   font-family: 'Poppins', sans-serif;
@@ -105,5 +105,12 @@
 @media (max-width: 768px) {
   .price-list-content {
     grid-template-columns: 1fr;
+    
   }
+  .price-item{
+margin-bottom: -5px;
+  }
+    .pricing-section-fix {
+    height: 174vh;
+}
 }

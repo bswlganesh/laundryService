@@ -3,7 +3,7 @@ import './ServicePage.css';
 import PricingList from './PricingList';
 import serviceslaundry from "../assets/services-laundry.jpg"
 import Carpetleaning from "../assets/carpet-cleaning.jpg";
-import SofaCleaning from "../assets/carpet-cleaning.jpg";
+import SofaCleaning from "../assets/sofa-cleaning.jpg";
 import DryCleaning from "../assets/dry-cleaning.jpg";
 import CarCleaning from "../assets/car-cleaning.jpg"
 const ServicePage = () => {
@@ -24,7 +24,7 @@ const ServicePage = () => {
         {/* Laundry Services Section */}
         <section className="laundry-services-section">
           <div className="laundry-image-column">
-            <img src={serviceslaundry} alt="Laundry Machines" />
+            <img src={serviceslaundry} alt="Laundry Machines" loading="lazy" />
           </div>
           <div className="laundry-text-column">
             <h3>Laundry Services</h3>
@@ -66,7 +66,7 @@ const ServicePage = () => {
         {/* Additional Services Grid Section */}
         <section className="additional-services-grid">
           <div className="service-card">
-            <img src={DryCleaning} alt="Dry Cleaning" />
+            <img src={DryCleaning} alt="Dry Cleaning" loading="lazy" />
             <div className="service-card-content">
               <h4>Dry Cleaning</h4>
               <p>
@@ -75,7 +75,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="service-card">
-            <img src={Carpetleaning} alt="Carpet Cleaning" />
+            <img src={Carpetleaning} alt="Carpet Cleaning" loading="lazy" />
             <div className="service-card-content">
               <h4>Carpet Cleaning</h4>
               <p>
@@ -84,7 +84,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="service-card">
-            <img src={SofaCleaning} alt="Sofa Cleaning" />
+            <img src={SofaCleaning} alt="Sofa Cleaning" loading="lazy" />
             <div className="service-card-content">
               <h4>Sofa Cleaning</h4>
               <p>
@@ -93,7 +93,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="service-card">
-            <img src={CarCleaning} alt="Car Washing" />
+            <img src={CarCleaning} alt="Car Washing" loading="lazy" />
             <div className="service-card-content">
               <h4>Car Washing</h4>
               <p>

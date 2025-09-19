@@ -16,7 +16,7 @@ const CleaningServices = () => {
     <div className="cleaning-services-container">
       <div className="services-grid">
         {services.map((service) => (
-          <ServiceCard key={service.id} image={service.image} name={service.name} scrollOffset={offsetY} />
+          <ServiceCard key={service.id} image={service.image} name={service.name} loading="lazy" />
         ))}
       </div>
     </div>

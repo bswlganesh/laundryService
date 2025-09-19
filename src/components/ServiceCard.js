@@ -18,11 +18,11 @@ export const services = [
   { id: 6, name: 'Car Cleaning', image: carCleaningImage },
 ];
 
-const ServiceCard = ({ image, name }) => {
+const ServiceCard = ({ image, name, loading = 'eager' }) => {
   return (
     <div className="servicecard-card">
       <div className="servicecard-card-image-container">
-        <img src={image} alt={name} />
+        <img src={image} alt={name} loading={loading} />
       </div>
       <div className="servicecard-card-content">
         <p>{name}</p>

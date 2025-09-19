@@ -21,11 +21,11 @@ const AboutUs = () => {
         <div className="about-intro-container">
           <div className="founders-column">
             <div className="founder-card">
-              <img src={founderImage1} alt="Sonia Gupta, Founder" />
+              <img src={founderImage1} alt="Sonia Gupta, Founder" loading="lazy" />
               <p>Sonia Gupta (Founder)</p>
             </div>
             <div className="founder-card">
-              <img src={founderImage2} alt="Ravi Gupta, Co-Founder" />
+              <img src={founderImage2} alt="Ravi Gupta, Co-Founder" loading="lazy" />
               <p>Ravi Gupta (Co-Founder)</p>
             </div>
           </div>

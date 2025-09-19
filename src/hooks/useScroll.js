@@ -3,16 +3,20 @@ import Lenis from '@studio-freight/lenis';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const useScroll = (options) => {
+const useScroll = () => {
   useEffect(() => {
-    // Register ScrollTrigger plugin
-    gsap.registerPlugin(ScrollTrigger);
-
     const lenis = new Lenis({
-      ...options,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
     });
 
     lenis.on('scroll', ScrollTrigger.update);
+
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
 
     gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
@@ -20,11 +24,14 @@ const useScroll = (options) => {
 
     gsap.ticker.lagSmoothing(0);
 
+    const st = requestAnimationFrame(raf);
+
     return () => {
+      cancelAnimationFrame(st);
       lenis.destroy();
-      gsap.ticker.remove(lenis.raf);
+      ScrollTrigger.killAll();
     };
-  }, [options]);
+  }, []);
 };
 
 export default useScroll;

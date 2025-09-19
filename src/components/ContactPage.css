@@ -1,3 +1,7 @@
+.contact-page{
+    font-family: 'Poppins', sans-serif;
+}
+
 .page-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/laundry.jpg');
     background-size: cover;
@@ -10,6 +14,7 @@
     color: white;
     text-align: center;
     padding: 20px;
+     
 }
 
 .page-banner .breadcrumb {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import useScroll from './hooks/useScroll'; // Import useScroll instead of useLenis
+import { Routes, Route} from 'react-router-dom';
+import useScroll from './hooks/useScroll';
 import Header from './components/Header';
 import Hero from './pages/Hero';
 import CleaningServices from './pages/CleaningServices';
@@ -14,6 +14,7 @@ import AboutUs from './components/AboutUs';
 import ServicePage from './components/ServicePage'
 import PricesPage from './pages/PricesPage';
 import ContactPage from './components/ContactPage';
+
 
 // A new component to represent the Home Page content
 const HomePage = () => (
@@ -34,7 +35,9 @@ export default function App() {
   return (
     <>
       <Header />
+     
       <main>
+         
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
