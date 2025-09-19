@@ -2,12 +2,15 @@ import React from 'react';
 import './ServicePage.css';
 import './Shared.css';
 import PricingList from './PricingList';
+import useTitleChange from '../hooks/useTitleChange';
 import serviceslaundry from "../assets/services-laundry.jpg"
 import Carpetleaning from "../assets/carpet-cleaning.jpg";
 import SofaCleaning from "../assets/sofa-cleaning.jpg";
 import DryCleaning from "../assets/dry-cleaning.jpg";
 import CarCleaning from "../assets/car-cleaning.jpg"
 const ServicePage = () => {
+  useTitleChange('Our Services');
+
   return (
     <div className="service-page-container">
       {/* Top Banner Section */}

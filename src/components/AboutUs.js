@@ -1,12 +1,14 @@
 import React from 'react';
 import './AboutUs.css';
 import './Shared.css';
+import useTitleChange from '../hooks/useTitleChange';
 
 // Placeholder images
 import founderImage1 from '../assets/founder1.png';
 import founderImage2 from '../assets/founder2.png';
 
 const AboutUs = () => {
+  useTitleChange('About Us');
   return (
     <div className="about-us-page">
       {/* Section 1: Hero Banner */}

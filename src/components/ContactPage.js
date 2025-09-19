@@ -2,8 +2,10 @@ import React from 'react';
 import './ContactPage.css';
 import './Shared.css';
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import useTitleChange from '../hooks/useTitleChange';
 
 export default function ContactPage() {
+  useTitleChange('Contact Us');
   return (
     <div className="contact-page">
       {/* Section 1: Hero Banner */}
