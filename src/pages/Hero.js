@@ -32,11 +32,6 @@ const Hero = () => {
 
   return (
     <section className="hero-container">
-      {/* Floating Phone Icon */}
-      <a href="tel:+919213203071" className="floating-icon phone-icon">
-        <img src={phoneIcon} alt="Call us" />
-      </a>
-
       {/* Left Section (Image) */}
       <div className="hero-image-section">
         <div className="image-blob-container">

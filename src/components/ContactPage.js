@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContactPage.css';
+import './Shared.css';
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 export default function ContactPage() {

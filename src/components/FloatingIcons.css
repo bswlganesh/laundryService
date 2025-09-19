@@ -1,0 +1,54 @@
+/* Keyframes for slide-in animation */
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes glide {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Floating Action Icons */
+.floating-icon {
+  position: fixed;
+  bottom: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating-icon img {
+ width: 35px;
+ height: 48px;
+/* filter: brightness(0) invert(1); /* Makes SVG white */
+}
+
+.floating-icon:hover {
+  transform: scale(1.1) translateY(-5px); /* Combine hover effects */
+}
+
+.phone-icon {
+  background-color: #3b82f6; /* Blue */
+  left: 1rem;
+  animation: slideInFromLeft 0.5s ease-out 0.2s forwards, glide 3s ease-in-out infinite 1s;
+}
+
+.whatsapp-icon {
+  background-color: #25d366; /* WhatsApp Green */
+  right: 1rem;
+  animation: slideInFromRight 0.5s ease-out forwards, glide 3s ease-in-out infinite 0.8s;
+}

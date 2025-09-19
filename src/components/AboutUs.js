@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
+import './Shared.css';
 
 // Placeholder images
 import founderImage1 from '../assets/founder1.png';

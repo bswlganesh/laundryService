@@ -10,43 +10,6 @@
     font-family: sans-serif;
 }
 
-/* Floating Icons */
-.floating-icon {
-    position: fixed; /* Use fixed to keep them in view on scroll */
-    bottom: 2rem;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    transition: transform 0.2s ease-in-out;
-}
-
-.floating-icon img {
-    width: 24px; /* 1.5rem */
-    height: 24px; /* 1.5rem */
-    filter: brightness(0) invert(1); /* Makes SVG white */
-}
-
-.floating-icon:hover {
-    transform: scale(1.1);
-}
-
-.phone-icon {
-    background-color: #3B82F6; /* Blue */
-    left: 1rem;
-}
-
-.whatsapp-icon {
-    background-color: #25D366; /* WhatsApp Green */
-    right: 1rem;
-}
-
 /* Left Section (Image) */
 .hero-image-section {
     position: relative;
@@ -260,10 +223,4 @@
     .main-heading {
         font-size: clamp(4rem, 6vw, 5.5rem); /* Responsive font size for desktop */
     }
-
-    .floating-icon {
-        position: absolute; /* Position relative to the hero container */
-    }
-    .phone-icon { left: 2rem; }
-    .whatsapp-icon { right: 2rem; }
 }

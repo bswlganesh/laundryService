@@ -1,5 +1,6 @@
 import React from 'react';
 import './ServicePage.css';
+import './Shared.css';
 import PricingList from './PricingList';
 import serviceslaundry from "../assets/services-laundry.jpg"
 import Carpetleaning from "../assets/carpet-cleaning.jpg";

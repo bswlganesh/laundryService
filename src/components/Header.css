@@ -90,6 +90,10 @@ header {
 }
 
 /* Pickup Button */
+.pickup-button-link{
+  text-decoration: none;
+  color: inherit;
+}
 .pickup-button {
   font-family: inherit;
   /* Adjusted from 20px to better fit the header */
