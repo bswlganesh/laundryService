@@ -27,7 +27,7 @@ export default function ContactPage() {
             </p>
             <div className="contact-detail">
               <FaMapMarkerAlt className="contact-detail-icon" />
-              <a className='contactMapAnchor' href=''>bswlganesh builing, Sector-11, Rohini, Delhi-110085</a>
+              <a className='contactMapAnchor' href='https://laundryinit.netlify.app/'>bswlganesh builing, Sector-11, Rohini, Delhi-110085</a>
             </div>
             <div className="contact-detail">
               <FaEnvelope className="contact-detail-icon" />
