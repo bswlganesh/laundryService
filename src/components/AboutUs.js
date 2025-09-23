@@ -4,8 +4,8 @@ import './Shared.css';
 import useTitleChange from '../hooks/useTitleChange';
 
 // Placeholder images
-import founderImage1 from '../assets/founder1.png';
-import founderImage2 from '../assets/founder2.png';
+import founderImage1 from '../assets/founder1.jpg';
+import founderImage2 from '../assets/founder2.jpg';
 
 const AboutUs = () => {
   useTitleChange('About Us');
@@ -25,17 +25,17 @@ const AboutUs = () => {
           <div className="founders-column">
             <div className="founder-card">
               <img src={founderImage1} alt="Sonia Gupta, Founder" loading="lazy" />
-              <p>Sonia Gupta (Founder)</p>
+              <p>PersonName1 (Founder)</p>
             </div>
             <div className="founder-card">
               <img src={founderImage2} alt="Ravi Gupta, Co-Founder" loading="lazy" />
-              <p>Ravi Gupta (Co-Founder)</p>
+              <p>PersonName2 (Co-Founder)</p>
             </div>
           </div>
           <div className="intro-text-column">
             <h2>Your Trusted Laundry Partner</h2>
             <p>
-              Dhulai Factory is your one-stop solution for premium laundry and dry cleaning services. We are dedicated to providing you with the highest quality care for your garments, using state-of-the-art technology and eco-friendly products.
+              Laundry Factory is your one-stop solution for premium laundry and dry cleaning services. We are dedicated to providing you with the highest quality care for your garments, using state-of-the-art technology and eco-friendly products.
             </p>
             <p>
               Our journey began with a simple mission: to make professional cleaning convenient, affordable, and reliable for everyone. Founded by Sonia and Ravi Gupta, our team is passionate about delivering exceptional results and outstanding customer service.

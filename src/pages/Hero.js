@@ -56,7 +56,7 @@ const Hero = () => {
         <div className="tagline-container">
           <span className="tagline">Laundry and Dry Cleaning Service</span>
         </div>
-        <h1 className="main-heading">DHULAI FACTORY</h1>
+        <h1 className="main-heading">LAUNDRY FACTORY</h1>
 
         {/* Services List */}
         <div className="services-container">
@@ -74,12 +74,12 @@ const Hero = () => {
         <div className="contact-info">
           <div className="HeroContactItem">
             <img src={mapMarkerIcon} alt="Location" className="hero-contact-icon" />
-            <span>Rohini, Delhi, 110085</span>
+            <span>Address, Delhi, 110085</span>
           </div>
           <div className="HeroContactItem">
-            <a href="tel:+919213203071" className="contact-phone-link">
+            <a href="tel:+916287982169" className="contact-phone-link">
               <img src={phoneIcon} alt="Phone" className="hero-contact-icon" />
-              <span>+91 92132 03071</span>
+              <span>+91 6287982169</span>
             </a>
           </div>
         </div>

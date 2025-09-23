@@ -13,7 +13,7 @@ const Header = () => {
         <div className="header-left">
           <img src={logo} alt="Dhulai Factory Logo" className="logo" />
           <div>
-            <h1>Dhulai Factory</h1>
+            <h1>Laundry Factory</h1>
             <p>Laundry / Laundromat & Dryclean</p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <a href="tel:+919213203071" className="pickup-button-link">
+          <a href="tel:+916287982169" className="pickup-button-link">
             <button className="pickup-button" aria-label="Schedule a pickup by calling +91 92132 03071">
               <div className="svg-wrapper-1">
                 <div className="svg-wrapper">

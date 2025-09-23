@@ -42,14 +42,15 @@ export default function App() {
 
       {/* Floating Action Buttons */}
       <a
-        href="tel:+919213203071"
+        href="tel:+916287982169"
         className="floating-icon phone-icon"
-        aria-label="Call us at +91 92132 03071"
+        aria-label="Call us at +91 6287982169"
+        target="_blank" rel="noopener noreferrer"
       >
         <img src={phoneIcon} alt="Call us" />
       </a>
       <a
-        href="https://wa.me/919213203071"
+        href="https://wa.me/916287982169"
         className="floating-icon whatsapp-icon"
         aria-label="Chat with us on WhatsApp"
         target="_blank" rel="noopener noreferrer"
